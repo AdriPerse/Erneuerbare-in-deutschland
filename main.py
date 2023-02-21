@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 from urllib.request import urlopen
@@ -58,9 +58,9 @@ st.plotly_chart(fig)
 ###################################################################################
 
 # Setting up columns
-#c1,c3 = st.columns([1,1])
+c1,c3 = st.columns([1,1])
 
 #c1.download_button("Download CSV File", data="https://data.open-power-system-data.org/renewable_power_plants/2020-08-25, file_name="Electricity in Germany", mime='text/csv')
 
-# link = '[To see the code in GitHub ](https://github.com/)'
-# c3.markdown(link, unsafe_allow_html=True)
+link = '[To see the code in GitHub ](https://github.com/AdriPerse/Erneuerbare-in-deutschland)'
+c3.markdown(link, unsafe_allow_html=True)
